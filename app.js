@@ -6,7 +6,7 @@ console.log(myColor.toString())
 console.log(myColor.join("+"))
 
 //accept number a number as input and insert dashes (-) between each even number
-let arr = [];
+/*let arr = [];
 function getValue() {
    const num = document.querySelector('input').value;
    console.log(num)
@@ -19,6 +19,7 @@ function getValue() {
    }
 }
 console.log(arr.join(''))
+*/
 
 //find the most frequent item in an array
 var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3,];
@@ -38,3 +39,28 @@ var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3,];
     }
         console.log(item+" ( " +mostFrequent +" times ) ") ;            
 
+
+let arr2 = [];
+function addVal() {
+    const values = document.getElementById('values').value;
+    arr2.push(values);
+}
+
+console.log(arr2);
+
+function displayVal() {
+    const displayDiv = document.getElementById('display');
+    displayDiv.innerHTML = ''; // Fjern eksisterende innhold i display-diven
+
+    for (const value of arr2) {
+        displayDiv.innerHTML +=  value + '<br>'; // Legg til hver verdi med linjeskift
+    }
+}
+/*
+function displayVal() {
+    const dis = arr2.values();
+    for (const di of dis) {
+        console.log(di)
+
+    }
+}*/
